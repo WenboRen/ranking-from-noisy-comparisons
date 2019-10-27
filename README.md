@@ -5,3 +5,7 @@ The codes are for our paper
 which is accepted for publication in NuerIPS 2019. 
 
 All entities can use the codes as long as you cite this work.
+
+"RankingMainFile.cpp" is the entry and contains the codes to generate instances.
+"RankingAlgoriths.h" contains the implementations of the ranking algorithms that are used in our paper.
+"HelperFunctions.h" contains some helper functions for the ranking algorithms.
