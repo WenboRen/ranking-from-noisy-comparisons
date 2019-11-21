@@ -34,9 +34,9 @@ bool AttemptingComparison(const double pij, const double epsilon, const double d
 }
 
 struct BIT {
-	BIT* lchild;
+	BIT *lchild;
 	BIT *rchild;
-	BIT* parent;
+	BIT *parent;
 	int left;
 	int right;
 	int counter;
@@ -46,8 +46,6 @@ struct BIT {
 bool AttemptingInsertion(const int i, vector<int> &S, const vector<vector<double>> &P, const double epsilon, const double delta, double *complexity) {
 	int n = S.size(); //S is ascending
 	int h = 1 + ceil(log2(1.0000 + (double)n));
-	if (n == 2)
-		int agsadertge = 1 + 1;
 	int tmax = ceil(max(4.0 * h, 512.0 * log(2.0 / delta) / 25.0));
 	double q = 15.0 / 16.0;
 	double q2 = sqrt(q), q3 = pow(q, 1.0 / 3.0);
